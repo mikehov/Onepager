@@ -8,6 +8,10 @@ html {
     scroll-behavior: smooth;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* KLEUREN PALLET */
 
 :root {
@@ -45,6 +49,11 @@ p {
 
 a {
   font-family: 'Roboto', sans-serif;
+  transition: all 0.2s ease;
+}
+
+a:hover {
+  color: var(--second-color);
 }
 
 /* SECTIONS-PAGES */
@@ -180,6 +189,8 @@ section#home section div p.homep {
 
 section#home section div p.homeptwee {
   color: var(--gray);
+  text-align: left;
+  line-height: 1.4;
   padding: 3em;
   background-color: var(--lightgray);
   margin: 2.5em;
@@ -215,8 +226,9 @@ section#product .productlinks {
   margin: 0.5em 2.5em 0.5em 5em;
   border-radius: 1em;
   text-align: left;
-  color: var(--white);
+  color: var(--text-color);
   padding: 1em;
+  line-height: 1.4em;
 }
 
 section#product .productrechts {
@@ -256,20 +268,43 @@ section#werking h3 {
 
 section#werking .werkinglinks {
   width: 45%;
-  /* background-color: var(--light-blue); */
   height: 20em;
   margin: 0.5em 2.5em 0.5em 5em;
   border-radius: 1em;
   text-align: left;
   color: var(--text-color);
-  /* border: solid 1px black; */
+  box-sizing: border-box;
 }
 
 section#werking .werkinglinks div {
-  background-color: var(--light-blue);
+  background-color: var(--lightgray);
   height: 90%;
   border-radius: 1em;
   padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+section#werking .werkinglinks div img {
+  width: 100%;
+  height: auto;
+}
+
+section#werking .werkinglinks p, section#werking .werkingrechts p  {
+  width: 100%;
+  padding: 1em;
+  bottom: 0;
+  background: var(--light-blue);
+  margin-top: 1em;
+  border-radius: 0.5em;
+  text-align: center;
+}
+
+section#werking .werkingrechts div img {
+  width: 100%;
+  height: auto;
 }
 
 section#werking .arrow {
@@ -299,10 +334,14 @@ section#werking .werkingrechts {
 }
 
 section#werking .werkingrechts div {
-  background-color: var(--light-blue);
+  background-color: var(--lightgray);
   height: 90%;
   border-radius: 1em;
   padding: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
 }
 
 section#werking .werkingrechts img {
@@ -329,6 +368,11 @@ section#video section {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+section#video .videogooglehome {
+  width: 600px;
+  height: 400px;
 }
 
 /* SECTION ONDERZOEK */
@@ -493,6 +537,7 @@ section#team h3 {
 section#team p {
   margin-bottom: 0.5em;
   color: var(--white);
+  font-style: italic;
 }
 
 section#team .teamtessa, .teammike, .teamthomas, .teamjaouad {

@@ -672,7 +672,7 @@ section#sbr .sbr {
 section#sbr .sbr article {
   background-color: var(--main-color);
   display: inline-block;
-  padding: 1em;
+  padding: 1.2em;
   border-radius: 1em;
   margin: auto;
   margin-top: 2em;
@@ -682,6 +682,7 @@ section#sbr .sbr article {
 section#sbr .sbr article h3 {
   color: var(--white);
   text-align: center;
+  margin-bottom: 0.5em;
 }
 
 section#sbr .sbr article p {

@@ -171,7 +171,7 @@ section#product, section#werking, section#video, section#onderzoek, section#team
 section#home section:first-child {
   background-color: var(--white);
   width: 50%;
-  height: 100vh;
+  min-height: 100vh;
   left: 0;
   display: flex;
   align-items: center;
@@ -181,7 +181,7 @@ section#home section:first-child {
 section#home section:last-child {
   background-color: var(--white);
   width: 50%;
-  height: 100vh;
+  min-height: 100vh;
   right: 0;
   display: flex;
   align-items: center;
@@ -250,7 +250,82 @@ section#home section:last-child img {
 
 section#product h2 {
   color: var(--white);
+  margin-bottom: 0.8rem;
 }
+
+section#product p {
+  font-size: 1.4em;
+  letter-spacing: 2px;
+  color: var(--white);
+  padding-bottom: 1em;
+  width: 20em;
+  margin: auto;
+  border-bottom: 1px solid var(--white);
+}
+
+section#product .productcolor p {
+  color: var(--main-color);
+  margin-top: 1em;
+  /* border-bottom: 1px solid var(--main-color); */
+  border: none;
+}
+
+section#product img {
+  width: 10em;
+  height: auto;
+  display: block;
+  text-align: center;
+  margin: auto auto;
+}
+
+section#product img.chat {
+  margin-top: 2em;
+  width: 40%;
+  margin-bottom: 3em;
+}
+
+section#product .productcolor {
+  background-color: var(--white);
+  padding-top: 1em;
+}
+
+section#product .dot {
+  width: 0.7em;
+  height: 0.7em;
+  background-color: var(--main-color);
+  display: block;
+  border-radius: 0.5em;
+  margin: auto;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+}
+
+section#product .plaat {
+  width: 12em;
+  display: inline-block;
+  padding: 2em;
+}
+
+section#product .productcolor article {
+  background-color: var(--second-color);
+  display: inline-block;
+  padding: 1em;
+  border-radius: 1em;
+  margin: 1em;
+}
+
+section#product .productcolor article h3 {
+  color: var(--white);
+  /* background-color: var(--main-color); */
+}
+
+section#product .productcolor article p {
+  color: var(--white);
+  letter-spacing: normal;
+  font-size: 1em;
+  display: inline-block;
+}
+
 
 section#product section {
   display: flex;
@@ -402,7 +477,7 @@ height: calc(100vh - 10rem);
 section#video section {
   background-color: var(--second-color);
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   left: 0;
   display: flex;
   align-items: center;
@@ -558,7 +633,8 @@ section#onderzoek .onderzoekcenterbron div {
 
 section#team section {
   width: 100%;
-  height: 100vh;
+  /* min-height: 100vh; */
+  height: auto;
   left: 0;
   display: flex;
   align-items: center;
@@ -570,14 +646,22 @@ section#team p.overons {
   display: block;
   margin: auto;
   /* font-style: italic; */
-  margin-top: 2em;
+  margin-top: 1em;
+  margin-bottom: 1em;
   padding: 1.5em;
   border-radius: 1em;
   border: solid 1px var(--light-blue);
 }
 
+section#team p.overonstwee {
+  margin-top: 0em;
+  margin-bottom: 3em;
+}
+
+
 section#team h2 {
   color: var(--white);
+  /* margin-bottom: 10em; */
 }
 
 section#team h3 {
@@ -608,10 +692,10 @@ section#team .teamtessa img, section#team .teammike img, section#team .teamthoma
 }
 
 section#team .test {
-  height: calc(100vh - 10rem);
+  /* height: calc(100vh - 10rem); */
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  /* justify-content: center; */
   align-content: center;
   box-sizing: border-box;
 }
@@ -620,7 +704,7 @@ section#team .test {
 
 section#contact section {
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
   left: 0;
 }
 

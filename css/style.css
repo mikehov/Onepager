@@ -198,11 +198,11 @@ section#home h1 {
   text-align: left;
   font-family: 'Staatliches', cursive;
   font-size: 3em;
-  width: 320px;
+  width: 25rem;
   margin: 0 auto;
   display: block;
   padding: 0 1.7em;
-  max-width: 20rem;
+  max-width: 25rem;
   margin-top: 1.5em;
 }
 
@@ -212,7 +212,7 @@ section#home section div p.homep {
   text-align: left;
   font-family: 'Staatliches', cursive;
   font-size: 2em;
-  width: 320px;
+  width: 24rem;
   margin: 0 auto;
   display: block;
   padding: 0 1.7em;
@@ -226,7 +226,7 @@ section#home section div p.homeptwee {
   /* background-color: var(--lightgray); */
   margin: 0em 4em;
   border-radius: 1em;
-  max-width: 20rem;
+  max-width: 24rem;
 }
 
 section#home section div a {
@@ -280,7 +280,7 @@ section#product p {
   letter-spacing: 0px;
   color: var(--white);
   padding-bottom: 1em;
-  width: 30em;
+  width: 35em;
   margin: auto;
   line-height: 1.4em;
   /* border-bottom: 1px solid var(--white); */
@@ -412,9 +412,9 @@ section#werking section {
 }
 
 section#werking .test p {
-  width: 30em;
+  width: 35em;
   margin: auto;
-  padding: 2em;
+  padding: 1em;
   color: var(--text-color);
   /* background-color: var(--second-color);
   border-radius: 1em; */
@@ -581,10 +581,55 @@ section#video p {
   color: var(--white);
   margin-top: 1em;
   text-align: center;
-  width: 30em;
+  width: 35em;
+}
+
+section#app {
+  background-color: var(--main-color);
+}
+
+section#app .test {
+  /* height: calc(100vh - 10rem); */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  box-sizing: border-box;
+}
+
+section#app .app1 {
+  width: 40%;
+  margin: auto;
+  padding-right: 2em;
+  text-align: right;
+}
+
+section#app .app2 {
+  width: 60%;
+  margin: auto;
+  padding-right: 2em;
+  text-align: right;
+}
+
+section#app .test section p {
+  text-align: left;
+  margin: auto;
+  color: var(--white);
+  font-weight: bolder;
+  font-size: 1.5em;
+  /* text-shadow: 1px 1px 2px var(--text-color); */
+}
+
+section#app .test section img {
+  height: 30em;
+  padding: 3em;
 }
 
 section#sbr .sbr h2 {
+  color: var(--main-color);
+}
+
+section#sbr h2 {
   color: var(--main-color);
 }
 
@@ -767,7 +812,7 @@ input[type=text] {
   margin: 1em;
   padding: 0.8em;
   border-radius: 2em;
-  font-family: 'Heebo' sans-serif;
+  font-family: 'Heebo', sans-serif;
   font-size: 1em;
   color: var(--gray);
   width: 25rem;
@@ -777,7 +822,7 @@ input[type=submit] {
   display: block;
   margin: 1em;
   border-radius: 2em;
-  font-family: 'Heebo' sans-serif;
+  font-family: 'Heebo', sans-serif;
   font-size: 1em;
   color: var(--gray);
   padding: 0.8em 4em;

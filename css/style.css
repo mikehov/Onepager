@@ -44,11 +44,11 @@ h3 {
 }
 
 p {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Heebo', sans-serif;
 }
 
 a {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Heebo', sans-serif;
   transition: all 0.2s ease;
   text-decoration: none;
 }
@@ -136,11 +136,15 @@ ul li {
 
 nav .first {
   margin-right: auto;
+  padding: 0em 0em;
+  height: 3rem;
 }
 
 nav .first img {
   max-height: 2em;
   width: auto;
+  margin-top: 15px;
+  height: 3rem;
 }
 
 .cloud img {
@@ -265,6 +269,16 @@ section#product h2 {
 }
 
 section#product p {
+  font-size: 1em;
+  letter-spacing: 0px;
+  color: var(--white);
+  padding-bottom: 1em;
+  width: 20em;
+  margin: auto;
+  /* border-bottom: 1px solid var(--white); */
+}
+
+section#product p.lijn {
   font-size: 1.4em;
   letter-spacing: 2px;
   color: var(--white);
@@ -272,13 +286,6 @@ section#product p {
   width: 20em;
   margin: auto;
   border-bottom: 1px solid var(--white);
-}
-
-section#product .productcolor p {
-  color: var(--main-color);
-  margin-top: 1em;
-  /* border-bottom: 1px solid var(--main-color); */
-  border: none;
 }
 
 section#product img {
@@ -537,10 +544,19 @@ section#werking img.pijl {
 
 /* SECTION VIDEO */
 
+section#video {
+  background-color: var(--second-color);
+  min-height: 100vh;
+}
+
+section#video h2 {
+  color: var(--white);
+}
+
 section#video section {
   background-color: var(--second-color);
   width: 100%;
-  min-height: 100vh;
+  height: calc(100vh - 10rem);
   left: 0;
   display: flex;
   align-items: center;
@@ -559,146 +575,6 @@ section#video p {
   margin-top: 1em;
 }
 
-/* SECTION ONDERZOEK */
-
-section#onderzoek section {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-section#onderzoek h3 {
-  margin-bottom: 0.5em;
-}
-
-section#onderzoek .onderzoeklinks {
-  width: 33%;
-  /* background-color: var(--light-blue); */
-  height: 15em;
-  margin: 0.5em 2.5em 0.5em 5em;
-  border-radius: 1em;
-  text-align: left;
-  color: var(--text-color);
-  margin-bottom: 4em;
-  /* border: solid 1px black; */
-}
-
-section#onderzoek .onderzoeklinks div {
-  background-color: var(--light-blue);
-  height: 90%;
-  border-radius: 1em;
-  padding: 1em;
-}
-section#onderzoek .onderzoekrechts {
-  width: 33%;
-  /* background-color: var(--light-blue); */
-  height: 15em;
-  margin: 0.5em 5em 0.5em 2.5em;
-  border-radius: 1em;
-  text-align: left;
-  color: var(--text-color);
-  margin-bottom: 4em;
-  /* border: solid 1px black; */
-}
-
-section#onderzoek .onderzoekrechts img {
-  width: auto;
-  height: 100%;
-}
-
-section#onderzoek .onderzoekrechts div {
-  background-color: var(--light-blue);
-  height: 90%;
-  border-radius: 1em;
-  padding: 1em;
-}
-
-section#onderzoek .onderzoekcenter {
-  width: 33%;
-  /* background-color: var(--light-blue); */
-  height: 15em;
-  margin: 0.5em 0.5em 0.5em 0.5em;
-  border-radius: 1em;
-  text-align: left;
-  color: var(--text-color);
-  margin-bottom: 4em;
-  /* border: solid 1px black; */
-}
-
-section#onderzoek .onderzoekcenter div {
-  background-color: var(--light-blue);
-  height: 90%;
-  border-radius: 1em;
-  padding: 1em;
-}
-
-section#onderzoek .test {
-height: calc(100vh - 10rem);
-
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-}
-
-section#onderzoek .onderzoeklinksbron {
-  width: 33%;
-  /* background-color: var(--light-blue); */
-  height: 5em;
-  margin: 0.5em 2.5em 0.5em 5em;
-  border-radius: 1em;
-  text-align: left;
-  color: var(--text-color);
-  /* border: solid 1px black; */
-}
-
-section#onderzoek .onderzoeklinksbron div {
-  background-color: var(--lightgray);
-  height: 90%;
-  border-radius: 1em;
-  padding: 1em;
-}
-section#onderzoek .onderzoekrechtsbron {
-  width: 33%;
-  /* background-color: var(--lightgray); */
-  height: 5em;
-  margin: 0.5em 5em 0.5em 2.5em;
-  border-radius: 1em;
-  text-align: left;
-  color: var(--text-color);
-  /* border: solid 1px black; */
-}
-
-section#onderzoek .onderzoekrechtsbron img {
-  width: auto;
-  height: 100%;
-}
-
-section#onderzoek .onderzoekrechtsbron div {
-  background-color: var(--lightgray);
-  height: 90%;
-  border-radius: 1em;
-  padding: 1em;
-}
-
-section#onderzoek .onderzoekcenterbron {
-  width: 33%;
-  /* background-color: var(--lightgray); */
-  height: 5em;
-  margin: 0.5em 0.5em 0.5em 0.5em;
-  border-radius: 1em;
-  text-align: left;
-  color: var(--text-color);
-  /* border: solid 1px black; */
-}
-
-section#onderzoek .onderzoekcenterbron div {
-  background-color: var(--lightgray);
-  height: 90%;
-  border-radius: 1em;
-  padding: 1em;
-}
-
 /* TEAM */
 
 section#team section {
@@ -712,20 +588,21 @@ section#team section {
 }
 
 section#team p.overons {
-  width: 35rem;
-  display: block;
+  width: 30em;
+  text-align: left;
+  display: inline-block;
   margin: auto;
-  font-size: 1.2em;
+  font-size: 1em;
   /* font-style: italic; */
-  margin-top: 1em;
+  margin-top: 0.5em;
   margin-bottom: 1em;
-  padding: 1.5em;
-  border-radius: 1em;
-  border: solid 1px var(--light-blue);
+  padding: 0em 1.5em;
+  /* border-radius: 1em; */
+  /* border: solid 1px var(--light-blue); */
 }
 
 section#team p.overonstwee {
-  margin-top: 0em;
+  margin-top: 0.5em;
   margin-bottom: 3em;
   font-size: 1em;
 }
@@ -739,6 +616,12 @@ section#team h2 {
 section#team h3 {
   margin-top: 0.5em;
   color: var(--white);
+  text-align: left;
+  padding: 0em 1em;
+}
+
+section#team h3.namen {
+  text-align: center;
 }
 
 section#team p {
@@ -770,6 +653,13 @@ section#team .test {
   /* justify-content: center; */
   align-content: center;
   box-sizing: border-box;
+}
+
+section#team .fixtekst {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 1em;
 }
 
 /* CONTACT */
@@ -828,7 +718,7 @@ input[type=text] {
   margin: 1em;
   padding: 0.8em;
   border-radius: 2em;
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Heebo' sans-serif;
   font-size: 1em;
   color: var(--gray);
   width: 25rem;
@@ -838,7 +728,7 @@ input[type=submit] {
   display: block;
   margin: 1em;
   border-radius: 2em;
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Heebo' sans-serif;
   font-size: 1em;
   color: var(--gray);
   padding: 0.8em 4em;
@@ -858,7 +748,7 @@ textarea {
   display: block;
   padding: 0.8em;
   border-radius: 2em;
-  font-family: 'Roboto' sans-serif;
+  font-family: 'Heebo' sans-serif;
   width: 25rem;
 }
 

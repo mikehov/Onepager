@@ -145,6 +145,11 @@ nav .first img {
   width: auto;
   margin-top: 15px;
   height: 3rem;
+  transition: all 0.2s ease;
+}
+
+nav .first img:hover {
+  transform: translateX(0.5em);
 }
 
 .cloud img {
@@ -587,7 +592,15 @@ section#video .videogooglehome {
   width: 600px;
   height: 400px;
   border-radius: 1em;
+  transition: all 0.2s ease;
+  padding: 1em;
+  background-color: #F07B17;
 }
+
+section#video .videogooglehome:hover {
+  transform: translateY(-0.5em);
+}
+
 
 section#video p {
   color: var(--white);
@@ -614,6 +627,11 @@ section#app .app1 {
   margin: auto;
   padding-right: 2em;
   text-align: right;
+  transition: all 0.3s ease;
+}
+
+section#app .app1:hover {
+  transform: translateX(-0.5em);
 }
 
 section#app .app2 {
